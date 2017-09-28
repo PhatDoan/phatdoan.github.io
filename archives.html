@@ -1,103 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+		<title>(Mostly) Technical Thoughts</title>
+		<meta name="description" content="">
+		<meta name="author" content="Phat Doan">
 
-    <link rel="stylesheet" type="text/css" href="http://phatdoan.com/theme/stylesheet/style.min.css">
-
-  <link rel="stylesheet" type="text/css" href="http://phatdoan.com/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="http://phatdoan.com/theme/font-awesome/css/font-awesome.min.css">
-
-
-
-
-    <link rel="shortcut icon" href="http://phatdoan.com/images/pavatar" type="image/x-icon">
-    <link rel="icon" href="http://phatdoan.com/images/pavatar" type="image/x-icon">
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#333">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#333">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta name="author" content="Phat Doan" />
-    <meta name="description" content="" />
-<meta property="og:site_name" content="(Mostly) Technical Thoughts"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="(Mostly) Technical Thoughts"/>
-<meta property="og:description" content=""/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://phatdoan.com"/>
-<meta property="og:image" content="http://phatdoan.com/images/pavatar">
-
-  <title>(Mostly) Technical Thoughts &ndash;     Archives
-</title>
-
-</head>
-<body>
-  <aside>
-    <div>
-      <a href="http://phatdoan.com">
-        <img src="http://phatdoan.com/images/pavatar" alt="Phat Doan" title="Phat Doan">
-      </a>
-      <h1><a href="http://phatdoan.com">Phat Doan</a></h1>
-
-<p>(Mostly) Technical Thoughts</p>
-
-      <ul class="social">
-        <li><a class="sc-github" href="https://github.com/phatdoan" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/phatdoanff" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      </ul>
-    </div>
+		<link rel="stylesheet" href="http://phatdoan.com/theme/css/foundation.css" />
+		<link rel="stylesheet" href="http://phatdoan.com/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="http://phatdoan.com/theme/css/custom.css" />
 
 
-  </aside>
-  <main>
+		<script src="http://phatdoan.com/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
 
 
-<article class="single">
-  <header>
-    <h1>    Archives
-</h1>
-  </header>
-  <div>
-    <dl>
-      <dt>Tue 26 September 2017</dt>
-      <dd><a href="http://phatdoan.com/first-rmarkdown-article.html">First RMarkdown Article</a></dd>
-      <dt>Sun 24 September 2017</dt>
-      <dd><a href="http://phatdoan.com/pelican-is-awesome.html">Pelican Is Awesome</a></dd>
-    </dl>
-  </div>
-</article>
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
 
-    <footer>
-<p>&copy; Phat Doan 2017</p>
-<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
-</p>    </footer>
-  </main>
+					<section class="middle tab-bar-section">
+						<h1 class="title">(Mostly)&nbsp;Technical&nbsp;Thoughts</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="http://phatdoan.com">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="http://phatdoan.com/category/blog.html">Blog</a></li>
+
+						<li><label>Links</label></li>
 
 
 
+						<li><label>Social</label></li>
+							<li><a href="https://github.com/phatdoan">github</a></li>
+							<li><a href="https://twitter.com/phatdoanff">twitter</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="http://phatdoan.com/">(Mostly) Technical Thoughts</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="http://phatdoan.com/category/blog.html">Blog</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+							<div class="row">
+								<div class="small-12 columns">
+									<h2>Archives</h2>
+								</div>
+							</div>
+	<div class="row">
+		<div class="small-10 columns small-centered">
+				<div class="row archive-year">
+					<div class="small-2 columns text-right">
+						<h3>2017</h3>
+					</div>
+				</div>
+					<div class="row archive-entry">
+						<div class="small-2 columns text-right">
+							<h5>Sep 26</h5>
+						</div>
+						<div class="small-10 columns">
+							<h5><a href="http://phatdoan.com/first-rmarkdown-article.html">First RMarkdown Article</a></h5>
+						</div>
+					</div>
+					<div class="row archive-entry">
+						<div class="small-2 columns text-right">
+							<h5>Sep 24</h5>
+						</div>
+						<div class="small-10 columns">
+							<h5><a href="http://phatdoan.com/pelican-is-awesome.html">Pelican Is Awesome</a></h5>
+						</div>
+					</div>
+		</div>
+	</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
 
 
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " (Mostly) Technical Thoughts ",
-  "url" : "http://phatdoan.com",
-  "image": "http://phatdoan.com/images/pavatar",
-  "description": ""
-}
-</script>
-</body>
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/phatdoan">github</a></li>
+									<li><a href="https://twitter.com/phatdoanff">twitter</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="http://phatdoan.com/theme/js/jquery.js"></script>
+		<script src="http://phatdoan.com/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>
