@@ -83,6 +83,13 @@
     <p>This is my first post to my personal Github Pages, published using Pelican.</p>
 <p>I wrote the content in the markdown format in <a href="https://vim.sourceforge.io/">vim</a>, and then after a few simple commands, I could publish it to the web. This is awesome!</p>
 <p>If you'd like to check it out, follow these <a href="http://docs.getpelican.com/en/stable/quickstart.html">simple quickstart steps</a>.</p>
+<p _="%" endfor>{% for set in flickr_sets %}
+<div class="set">
+    <a class="primary" href="{{ set.url }}">
+        <img class="light" src="{{ set.primary.sizes.medium.source }}" />
+        {{ set.title }}
+    </a>
+</div></p>
   </div>
   <div class="tag-cloud">
     <p>
