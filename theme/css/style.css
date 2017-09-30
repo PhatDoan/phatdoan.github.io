@@ -225,10 +225,10 @@ figure.floatcenter, .align-center {
 :target:before {
   content:"";
   display:block;
-  height:50px;
+  height:20px;
   /* fixed header height*/
 
-  margin:-50px 0 0;
+  margin:-20px 0 0;
   /* negative fixed header height */
 }
 
