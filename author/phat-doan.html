@@ -27,6 +27,7 @@
     <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="../theme/css/pygments/manni.css" rel="stylesheet">
+    <link href="../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
 
 
@@ -55,6 +56,11 @@
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
 
 						<li class="dropdown" id="theme-dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs icon-large"></i> Theme<b class="caret"></b></a>
